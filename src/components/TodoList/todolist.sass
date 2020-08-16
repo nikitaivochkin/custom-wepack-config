@@ -1,0 +1,15 @@
+@import '../../styles/_extends.sass'
+@import '../../styles/_mixins.sass'
+
+.todo-list
+  @extend %d_flex_center
+  flex-direction: column
+  max-width: 80%
+  height: 100%
+  margin: 0 auto
+  &__nav
+    & a
+      margin: 0 0.5vw
+
+.empty-todos
+  margin-top: 50%

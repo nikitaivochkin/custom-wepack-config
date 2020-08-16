@@ -1,0 +1,39 @@
+@import './_extends.sass'
+@import './_mixins.sass'
+@import './components/navigation.sass'
+@import '~antd/dist/antd.css'
+
+html, body
+  height: 100%
+  outline: none
+
+body
+  margin: 0 auto
+  padding: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+#root
+  width: 100%
+  min-height: 100%
+  @extend %d_flex_center
+  flex-direction: column
+  text-align: center
+
+.content
+  padding: 2vw 0 
+  flex-grow: 1
+  height: 100%
+  width: 100%
+  max-width: 100vw
+  overflow: hidden
+
+.component
+  position: relative
+  width: 100%
+  &__container
+    width: 85%
+    margin: 0 auto

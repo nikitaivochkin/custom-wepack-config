@@ -1,0 +1,26 @@
+@import '../../styles/_extends.sass'
+@import '../../styles/_mixins.sass'
+
+.form
+  position: relative
+  width: 30%
+  margin: 0 auto
+  &__element
+    position: relative
+    & input
+      margin-bottom: 3vw
+    & .error
+      position: absolute
+      color: red
+      top: 50%
+      left: 0
+  &__submit
+    @extend %d_flex_sa
+    position: relative
+    margin-top: 2vw
+  &__error
+    position: absolute
+    top: -1.3rem
+    left: 50%
+    transform: translateX(-50%)
+    color: red
