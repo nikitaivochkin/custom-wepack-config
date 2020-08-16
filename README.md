@@ -1,1 +1,1 @@
-# custom-wepack-config
+# custom wepack config for react & redux app
